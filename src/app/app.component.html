@@ -1,0 +1,54 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title> THEMING</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <fieldset class="color-field">
+      <legend class="color-field-label">Theme Color</legend>
+      <app-palette-colors (onChange)="changeColorTheme($event)" />
+    </fieldset>
+
+    <br />
+
+    <mat-form-field appearance="outline">
+      <mat-label>Flat Button Font Size</mat-label>
+      <input
+        type="number"
+        matInput
+        [defaultValue]="14"
+        (change)="changeFlatButtonFontSize($event)"
+      />
+    </mat-form-field>
+    <div class="gap"></div>
+    <mat-form-field appearance="outline">
+      <mat-label>Rouddness</mat-label>
+      <input
+        type="number"
+        matInput
+        [defaultValue]="roudnes()"
+        (change)="changeRoudnes($event)"
+      />
+    </mat-form-field>
+    <br />
+    <button mat-flat-button mat-warn>Flat Primary Button</button>
+    <div class="gap"></div>
+    <button mat-flat-button class="secondary-btn">Flat Secondary Button</button>
+    <div class="gap"></div>
+    <button mat-flat-button class="tertiary-btn">Flat Tertiary Button</button>
+    <div class="gap"></div>
+    <button mat-flat-button class="error-btn">Flat Error Button</button>
+    <br />
+    <br />
+    <mat-form-field appearance="outline">
+      <mat-label>Heading Font Size</mat-label>
+      <input
+        type="number"
+        matInput
+        [defaultValue]="'56.992'"
+        (change)="changeHeadingFontSize($event)"
+      />
+    </mat-form-field>
+    <h1>Heading</h1>
+
+    <app-host-theming /> </mat-card-content
+></mat-card>

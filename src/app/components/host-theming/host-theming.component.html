@@ -1,0 +1,19 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title> HOST THEMING</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field>
+      <mat-label>Rouddness</mat-label>
+      <input
+        type="number"
+        matInput
+        [defaultValue]="roudnes()"
+        (change)="changeRoudnes($event)"
+      /> </mat-form-field
+    ><br />
+    <button mat-flat-button mat-warn>Flat Button</button>
+    <div class="gap"></div>
+    <button mat-stroked-button>Stroked Button</button>
+  </mat-card-content>
+</mat-card>

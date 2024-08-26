@@ -1,0 +1,30 @@
+@use "@angular/material" as mat;
+@use "./themes/m3-theme";
+
+@include mat.core();
+
+:root {
+  @include mat.all-component-themes(m3-theme.$light-theme);
+  @include mat.typography-hierarchy(m3-theme.$light-theme);
+  @include mat.system-level-colors(m3-theme.$light-theme);
+  @include mat.system-level-typography(m3-theme.$light-theme);
+}
+
+.secondary-btn {
+  @include mat.button-color(m3-theme.$light-theme, $color-variant: secondary);
+}
+.tertiary-btn {
+  @include mat.button-color(m3-theme.$light-theme, $color-variant: tertiary);
+}
+.error-btn {
+  @include mat.button-color(m3-theme.$light-theme, $color-variant: error);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

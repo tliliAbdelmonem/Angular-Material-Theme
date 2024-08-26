@@ -1,0 +1,30 @@
+:host {
+    display: block;
+    padding: 16px;
+    --mat-card-title-text-size: 1rem;
+    --mdc-outlined-card-container-shape: 0px;
+    --mat-card-title-text-weight: 500;
+    --mdc-outlined-card-container-color: #fff;
+}
+
+.gap {
+    display: inline-flex;
+    width: 8px;
+}
+
+mat-card-content {
+    padding: 20px;
+}
+
+.color-field {
+    border-color: var(--mdc-outlined-text-field-hover-outline-color, var(--mat-app-on-surface));
+    border-color: var(--mdc-outlined-text-field-outline-color, var(--mat-app-outline));
+    border-width: var(--mdc-outlined-text-field-outline-width);
+    border-radius: var(--mdc-outlined-text-field-container-shape, var(--mat-app-corner-extra-small));
+}
+.color-field-label {
+    font-family: var(--mdc-outlined-text-field-label-text-font, var(--mat-app-body-large-font));
+    font-size: 12px;
+    font-weight: var(--mdc-outlined-text-field-label-text-weight, var(--mat-app-body-large-weight));
+    letter-spacing: var(--mdc-outlined-text-field-label-text-tracking, var(--mat-app-body-large-tracking));
+}

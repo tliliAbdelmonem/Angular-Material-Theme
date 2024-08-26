@@ -1,0 +1,13 @@
+:host {
+    --mdc-outlined-card-container-shape: 0px;
+    --mat-card-title-text-weight: 500;
+}
+
+mat-card-content {
+    padding: 20px;
+}
+
+.gap {
+    display: inline-flex;
+    width: 8px;
+}
