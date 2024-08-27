@@ -1,32 +1,37 @@
-# Desktop
+# Angular Material 18 Theming Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+This Angular application demonstrates how to implement custom theming using Angular Material 18. It includes dynamic theming features, such as modifying button rounding, changing the color theme, and adjusting font sizes.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Dynamic Rounding: Adjust the rounding of button corners dynamically.
+* Custom Color Theme: Change the application's color theme using [material-color-utilities](https://www.npmjs.com/package/@material/material-color-utilities).
+* Font Size Customization: Modify font sizes for flat buttons and headings.
+
+## Installation
+
+1. Clone the repository:
+
+```
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+
+```
+
+2. Install dependencies:
+
+```
+npm install
+
+```
+3. Run the application:
+
+```
+ng serve
+
+```
 
 
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
+## Preview
 
 ![alt text](https://github.com/tliliAbdelmonem/Angular-Material-Theme/blob/main/public/preview/Screenshot.png?raw=true)
